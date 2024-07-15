@@ -3,11 +3,9 @@ import { Link } from 'react-router-dom';
 import styles from './challenge-grid.module.scss';
 import { useMemo } from 'react';
 import { contributors } from '@fmc/data/content';
-import { OptionType } from '@fmc/data/types';
+import { ETag, OptionType } from '@fmc/data/types';
 import { Difficulties } from '@fmc/data/constants';
 import { Search } from 'lucide-react';
-import { ETag } from '../../../../../../../shared/data/types/challenge';
-
 interface Props {
   searchInput: string;
   setSearchInput: React.Dispatch<React.SetStateAction<string>>;
